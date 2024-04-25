@@ -17,6 +17,11 @@ function App() {
       {
         urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
       },
+      { 
+        urls: 'turn:freeturn.net:3478', 
+        username: 'free', 
+        credential: 'free',
+      }
     ],
     iceCandidatePoolSize: 10,
   };
