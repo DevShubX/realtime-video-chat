@@ -15,13 +15,18 @@ function App() {
   const servers = {
     iceServers: [
       {
-        urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
+        urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302','stun:freeturn.net:5349','stun:freeturn.net:3478'],
+      },
+      { 
+        urls: 'turns:freeturn.net:5349', 
+        username: 'free', 
+        credential: 'free',
       },
       { 
         urls: 'turn:freeturn.net:3478', 
         username: 'free', 
         credential: 'free',
-      }
+      },
     ],
     iceCandidatePoolSize: 10,
   };
