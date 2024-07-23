@@ -15,7 +15,7 @@ function App() {
   const servers = {
     iceServers: [
       {
-        urls: ['stun:stun.vomessen.de:3478'],
+        urls: ['stun:stun.rapidnet.de:3478'],
       },
     ],
     iceCandidatePoolSize: 10,
