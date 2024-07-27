@@ -14,10 +14,29 @@ function App() {
 
   const servers = {
     iceServers: [
-      {
-        urls: ['stun:stun.rapidnet.de:3478'],
-      },
-    ],
+    {
+      url: 'stun:global.stun.twilio.com:3478',
+      urls: 'stun:global.stun.twilio.com:3478'
+    },
+    {
+      url: 'turn:global.turn.twilio.com:3478?transport=udp',
+      username: 'daf5dd7ee18736d266b2fdeb02fbb4bd67236d10e2313935586e0d82befd0403',
+      urls: 'turn:global.turn.twilio.com:3478?transport=udp',
+      credential: '/lebdz3Dys1I7TsLru4Fp+YdLcUUTpWRnA3f5sfQ6Sg='
+    },
+    {
+      url: 'turn:global.turn.twilio.com:3478?transport=tcp',
+      username: 'daf5dd7ee18736d266b2fdeb02fbb4bd67236d10e2313935586e0d82befd0403',
+      urls: 'turn:global.turn.twilio.com:3478?transport=tcp',
+      credential: '/lebdz3Dys1I7TsLru4Fp+YdLcUUTpWRnA3f5sfQ6Sg='
+    },
+    {
+      url: 'turn:global.turn.twilio.com:443?transport=tcp',
+      username: 'daf5dd7ee18736d266b2fdeb02fbb4bd67236d10e2313935586e0d82befd0403',
+      urls: 'turn:global.turn.twilio.com:443?transport=tcp',
+      credential: '/lebdz3Dys1I7TsLru4Fp+YdLcUUTpWRnA3f5sfQ6Sg='
+    }
+  ],
     iceCandidatePoolSize: 10,
   };
 
